@@ -8,9 +8,11 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#portfolio", label: "Portfolio" },
+  { href: "/services", label: "Services" },
+  { href: "/#contact", label: "Contact" },
 ]
 
 export function Header() {

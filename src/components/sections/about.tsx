@@ -21,6 +21,8 @@ const skills = [
   { icon: <NodeSVG />, name: "Node.js" },
   { icon: <Server className="h-10 w-10 text-primary" />, name: "Express.js" },
   { icon: <Database className="h-10 w-10 text-primary" />, name: "MongoDB" },
+  { icon: <Database className="h-10 w-10 text-primary" />, name: "PostgreSQL" },
+  { icon: <Database className="h-10 w-10 text-primary" />, name: "MySQL" },
   { icon: <KeyRound className="h-10 w-10 text-primary" />, name: "JWT Auth" },
   { icon: <Workflow className="h-10 w-10 text-primary" />, name: "REST APIs" },
 ]
