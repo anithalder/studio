@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/header"
 import { Hero } from "@/components/sections/hero"
 import { About } from "@/components/sections/about"
 import { Portfolio } from "@/components/sections/portfolio"
+import { Services } from "@/components/sections/services"
 import { Exploring } from "@/components/sections/exploring"
 import { Contact } from "@/components/sections/contact"
 import { Footer } from "@/components/layout/footer"
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <Portfolio />
+        <Services />
         <Exploring />
         <Contact />
       </main>
