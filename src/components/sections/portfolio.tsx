@@ -9,7 +9,7 @@ const projects = [
     title: "E-Commerce Garment Website",
     description: "A full-stack eCommerce platform with dynamic product listing, JWT-based user authentication, and admin panel functionality. Built using React, Express.js, MongoDB, and Node.js.",
     image: {
-      src: "https://placehold.co/800x600.png",
+      src: "/images/project-1.png",
       width: 800,
       height: 600,
       alt: "E-Commerce Garment Website",
@@ -23,7 +23,7 @@ const projects = [
     title: "Your Next Great Project",
     description: "This is a placeholder for another one of your amazing projects. You can easily add more by editing the projects array in this file. Each project will have its own placeholder image.",
     image: {
-      src: "https://placehold.co/800x600.png",
+      src: "/images/project-2.png",
       width: 800,
       height: 600,
       alt: "Placeholder Project",
