@@ -35,7 +35,7 @@ export function About() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-primary font-headline">About Me</h2>
             <p className="text-muted-foreground leading-relaxed">
-              I’m a B.Tech 3rd year student at Calcutta University, with a B.Sc. in Computer Science. I have working knowledge of full-stack development, system design, and modern web technologies. I recently built a fully scalable dynamic eCommerce website using the MERN stack and JWT authentication.
+              I'm a B.Tech 3rd year student at Calcutta University, with a B.Sc. in Computer Science. I have working knowledge of full-stack development, system design, and modern web technologies. I recently built a fully scalable dynamic eCommerce website using the MERN stack and JWT authentication.
             </p>
           </div>
           <div className="space-y-4">

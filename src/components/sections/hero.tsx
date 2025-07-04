@@ -8,10 +8,10 @@ export function Hero() {
     <section id="home" className="container mx-auto flex min-h-screen flex-col items-center justify-center text-center px-4 md:px-6">
       <div className="flex flex-col items-center space-y-6">
         <Image
-          src="https://placehold.co/150x150.png"
+          src="/images/profile.png"
           alt="Anit Halder"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           className="rounded-full border-4 border-primary shadow-lg"
           data-ai-hint="profile picture"
           priority

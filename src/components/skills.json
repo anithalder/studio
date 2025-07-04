@@ -1,0 +1,70 @@
+{
+  "skills": [
+    {
+      "title": "React.js",
+      "description": "Building modern web applications with React",
+      "icon": "ReactSVG",
+      "tags": ["Frontend", "JavaScript", "Component-Based"]
+    },
+    {
+      "title": "Tailwind CSS",
+      "description": "Utility-first CSS framework for rapid UI development",
+      "icon": "TailwindSVG",
+      "tags": ["CSS", "Responsive", "Utility-First"]
+    },
+    {
+      "title": "ShadCN",
+      "description": "Beautifully designed components built with Radix UI and Tailwind",
+      "icon": "Component",
+      "tags": ["UI Components", "Accessibility", "Design System"]
+    },
+    {
+      "title": "DaisyUI",
+      "description": "Component library for Tailwind CSS",
+      "icon": "Flower2",
+      "tags": ["UI Components", "Tailwind", "Themes"]
+    },
+    {
+      "title": "Node.js",
+      "description": "Server-side JavaScript runtime",
+      "icon": "NodeSVG",
+      "tags": ["Backend", "JavaScript", "Runtime"]
+    },
+    {
+      "title": "Express.js",
+      "description": "Fast, unopinionated web framework for Node.js",
+      "icon": "Server",
+      "tags": ["Backend", "Node.js", "Web Framework"]
+    },
+    {
+      "title": "MongoDB",
+      "description": "NoSQL database for modern applications",
+      "icon": "Database",
+      "tags": ["Database", "NoSQL", "JSON"]
+    },
+    {
+      "title": "PostgreSQL",
+      "description": "Advanced open source relational database",
+      "icon": "Database",
+      "tags": ["Database", "SQL", "Relational"]
+    },
+    {
+      "title": "MySQL",
+      "description": "Popular open source relational database",
+      "icon": "Database",
+      "tags": ["Database", "SQL", "Relational"]
+    },
+    {
+      "title": "JWT Auth",
+      "description": "Secure authentication using JSON Web Tokens",
+      "icon": "KeyRound",
+      "tags": ["Security", "Authentication", "API"]
+    },
+    {
+      "title": "REST APIs",
+      "description": "Building RESTful web services",
+      "icon": "Workflow",
+      "tags": ["API", "HTTP", "Web Services"]
+    }
+  ]
+}
