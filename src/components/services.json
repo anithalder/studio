@@ -1,37 +1,28 @@
 {
-    "services": [
-        {
-            "title": "Web Application Development",
-            "description": "Full-stack web application development using modern technologies and best practices. From concept to deployment, I create scalable and maintainable solutions.",
-            "icon": "Code",
-            "highlights": [
-                "Custom web applications",
-                "E-commerce solutions",
-                "Progressive Web Apps (PWA)",
-                "API integration"
-            ]
-        },
-        {
-            "title": "UI/UX Development",
-            "description": "Creating beautiful, responsive, and user-friendly interfaces that provide excellent user experience across all devices.",
-            "icon": "Layout",
-            "highlights": [
-                "Responsive design",
-                "Interactive interfaces",
-                "Performance optimization",
-                "Cross-browser compatibility"
-            ]
-        },
-        {
-            "title": "Technical Consultation",
-            "description": "Providing expert advice on technology stack selection, architecture design, and best practices for web development projects.",
-            "icon": "MessageSquare",
-            "highlights": [
-                "Technology stack selection",
-                "Architecture planning",
-                "Code review",
-                "Performance optimization"
-            ]
-        }
-    ]
+  "services": [
+    {
+      "title": "Web Application Development",
+      "description": "Building responsive and scalable full-stack web applications using modern technologies like React, Next.js, and Node.js.",
+      "icon": "Code",
+      "highlights": ["Full-stack development", "Modern frameworks", "Responsive design"]
+    },
+    {
+      "title": "API Development & Integration",
+      "description": "Designing and building robust RESTful APIs for seamless data communication between client and server.",
+      "icon": "Server",
+      "highlights": ["RESTful APIs", "Server integration", "Data communication"]
+    },
+    {
+      "title": "Database Design & Management",
+      "description": "Expertise in designing and managing both SQL and NoSQL databases like MongoDB, PostgreSQL, and MySQL.",
+      "icon": "DatabaseZap",
+      "highlights": ["SQL & NoSQL", "Database optimization", "Data modeling"]
+    },
+    {
+      "title": "UI/UX Design & Implementation",
+      "description": "Creating intuitive and visually appealing user interfaces with a focus on user experience, using tools like Tailwind CSS and ShadCN UI.",
+      "icon": "Palette",
+      "highlights": ["User experience", "Modern UI frameworks", "Responsive design"]
+    }
+  ]
 }
