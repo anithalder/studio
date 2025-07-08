@@ -27,47 +27,47 @@ export function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-                <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-                <div className="space-y-4 text-muted-foreground">
-                  <div className="flex items-center gap-4">
-                    <Mail className="h-6 w-6 text-primary"/>
-                    <a href="mailto:anit.halder.dev@gmail.com" className="hover:text-primary transition-colors">anit.halder.dev@gmail.com</a>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Phone className="h-6 w-6 text-primary"/>
-                    <a href="tel:+911234567890" className="hover:text-primary transition-colors">+91 12345 67890</a>
-                  </div>
+              <h3 className="text-xl font-bold mb-4">Contact Information</h3>
+              <div className="space-y-4 text-muted-foreground">
+                <div className="flex items-center gap-4">
+                  <Mail className="h-6 w-6 text-primary" />
+                  <a href="mailto:anit.halder.dev@gmail.com" className="hover:text-primary transition-colors">anithalder360@gmail.com</a>
                 </div>
+                <div className="flex items-center gap-4">
+                  <Phone className="h-6 w-6 text-primary" />
+                  <a href="tel:+911234567890" className="hover:text-primary transition-colors">+91 7439 60604</a>
+                </div>
+              </div>
             </div>
             <div>
-                <h3 className="text-xl font-bold mb-4">Find me on</h3>
-                <div className="flex space-x-4">
-                    <a href="https://github.com/anit-halder" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <Button variant="outline" size="icon" className="h-12 w-12">
-                            <Github className="h-6 w-6"/>
-                        </Button>
-                    </a>
-                    <a href="https://linkedin.com/in/anit-halder" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <Button variant="outline" size="icon" className="h-12 w-12">
-                            <Linkedin className="h-6 w-6"/>
-                        </Button>
-                    </a>
-                    <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <Button variant="outline" size="icon" className="h-12 w-12">
-                            <Facebook className="h-6 w-6"/>
-                        </Button>
-                    </a>
-                    <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <Button variant="outline" size="icon" className="h-12 w-12">
-                            <Instagram className="h-6 w-6"/>
-                        </Button>
-                    </a>
-                    <a href="https://discord.com/users/your-id" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-                        <Button variant="outline" size="icon" className="h-12 w-12">
-                            <DiscordIcon className="h-6 w-6"/>
-                        </Button>
-                    </a>
-                </div>
+              <h3 className="text-xl font-bold mb-4">Find me on</h3>
+              <div className="flex space-x-4">
+                <a href="https://github.com/anit-halder" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <Button variant="outline" size="icon" className="h-12 w-12">
+                    <Github className="h-6 w-6" />
+                  </Button>
+                </a>
+                <a href="https://linkedin.com/in/anit-halder" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <Button variant="outline" size="icon" className="h-12 w-12">
+                    <Linkedin className="h-6 w-6" />
+                  </Button>
+                </a>
+                <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <Button variant="outline" size="icon" className="h-12 w-12">
+                    <Facebook className="h-6 w-6" />
+                  </Button>
+                </a>
+                <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <Button variant="outline" size="icon" className="h-12 w-12">
+                    <Instagram className="h-6 w-6" />
+                  </Button>
+                </a>
+                <a href="https://discord.com/users/your-id" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                  <Button variant="outline" size="icon" className="h-12 w-12">
+                    <DiscordIcon className="h-6 w-6" />
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
           <div>
