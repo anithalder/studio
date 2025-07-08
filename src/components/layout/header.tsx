@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
@@ -19,6 +20,7 @@ const navLinks = [
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +29,12 @@ export function Header() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // Helper to check if link is active
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/"
+    return pathname.startsWith(href.replace("/#", "/"))
+  }
 
   return (
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent"}`}>
@@ -37,7 +45,11 @@ export function Header() {
         </Link>
         <nav className="hidden items-center gap-4 md:flex">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-foreground/80 transition-colors hover:text-primary">
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`text-foreground/80 transition-colors hover:text-primary ${isActive(link.href) ? "font-semibold text-primary underline underline-offset-4" : ""}`}
+            >
               {link.label}
             </Link>
           ))}
@@ -47,8 +59,8 @@ export function Header() {
           <ThemeToggle />
         </nav>
         <div className="flex items-center gap-2 md:hidden">
-            <ThemeToggle />
-            <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
+          <ThemeToggle />
+          <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             <span className="sr-only">Toggle menu</span>
           </Button>
@@ -58,7 +70,12 @@ export function Header() {
         <div className="md:hidden bg-background/95 pb-6">
           <nav className="flex flex-col items-center gap-4 py-6">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 transition-colors hover:text-primary">
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className={`text-lg text-foreground/80 transition-colors hover:text-primary ${isActive(link.href) ? "font-semibold text-primary underline underline-offset-4" : ""}`}
+              >
                 {link.label}
               </Link>
             ))}
