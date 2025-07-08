@@ -32,8 +32,20 @@ export function Header() {
 
   // Helper to check if link is active
   const isActive = (href: string) => {
-    if (href === "/") return pathname === "/"
-    return pathname.startsWith(href.replace("/#", "/"))
+    // Remove hash for comparison
+    const cleanHref = href.split("#")[0]
+    const cleanPath = pathname.split("#")[0]
+
+    // Home
+    if (href === "/") return cleanPath === "/"
+
+    // For hash links and other pages
+    if (href.includes("#")) {
+      return pathname === "/" && window.location.hash === href.replace("/", "")
+    }
+
+    // For other pages
+    return cleanPath === cleanHref
   }
 
   return (
