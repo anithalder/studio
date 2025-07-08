@@ -18,7 +18,7 @@
                 "REST API"
             ],
             "liveDisabled": false,
-            "codeDisabled": false
+            "codeDisabled": true
         },
         {
             "title": "Your Next Great Project",
@@ -37,7 +37,7 @@
                 "Vercel"
             ],
             "liveDisabled": false,
-            "codeDisabled": false
+            "codeDisabled": true
         }
     ]
 }
