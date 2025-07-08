@@ -32,7 +32,7 @@ export function Header() {
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent"}`}>
       <div className="container mx-auto flex h-16 items-center justify-between px-3 md:px-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-colors hover:text-primary/80 mr-4">
-          <Image src="/images/logo.png" alt="Logo" width={40} height={40}/>
+          <Image src="/images/logo.png" alt="Logo" width={50} height={50} className="ml-2" />
           {/* <span className="text-3xl">Anit</span> */}
         </Link>
         <nav className="hidden items-center gap-4 md:flex">
