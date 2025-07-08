@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
-import { usePathname } from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
@@ -20,7 +19,6 @@ const navLinks = [
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,24 +27,6 @@ export function Header() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
-  // Helper to check if link is active
-  const isActive = (href: string) => {
-    // Remove hash for comparison
-    const cleanHref = href.split("#")[0]
-    const cleanPath = pathname.split("#")[0]
-
-    // Home
-    if (href === "/") return cleanPath === "/"
-
-    // For hash links and other pages
-    if (href.includes("#")) {
-      return pathname === "/" && window.location.hash === href.replace("/", "")
-    }
-
-    // For other pages
-    return cleanPath === cleanHref
-  }
 
   return (
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent"}`}>
@@ -57,11 +37,7 @@ export function Header() {
         </Link>
         <nav className="hidden items-center gap-4 md:flex">
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`text-foreground/80 transition-colors hover:text-primary ${isActive(link.href) ? "font-semibold text-primary underline underline-offset-4" : ""}`}
-            >
+            <Link key={link.href} href={link.href} className="text-foreground/80 transition-colors hover:text-primary">
               {link.label}
             </Link>
           ))}
@@ -82,12 +58,7 @@ export function Header() {
         <div className="md:hidden bg-background/95 pb-6">
           <nav className="flex flex-col items-center gap-4 py-6">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className={`text-lg text-foreground/80 transition-colors hover:text-primary ${isActive(link.href) ? "font-semibold text-primary underline underline-offset-4" : ""}`}
-              >
+              <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 transition-colors hover:text-primary">
                 {link.label}
               </Link>
             ))}
