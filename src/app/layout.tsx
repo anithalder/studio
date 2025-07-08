@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: "Anit's Portfolio",
+  title: "Anit Halder",
   description: 'MERN Stack Web Developer | B.Tech IT Student',
 };
 
