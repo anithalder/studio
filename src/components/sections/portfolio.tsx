@@ -5,38 +5,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { ExternalLink, Github } from "lucide-react"
 import projectsData from "@/components/projects.json"
 
-
-const projects = [
-  {
-    title: "E-Commerce Garment Website",
-    description: "A full-stack eCommerce platform with dynamic product listing, JWT-based user authentication, and admin panel functionality. Built using React, Express.js, MongoDB, and Node.js.",
-    image: {
-      src: "/images/project-1.png",
-      width: 800,
-      height: 600,
-      alt: "E-Commerce Garment Website",
-      hint: "ecommerce website"
-    },
-    tags: ["MERN", "JWT", "Tailwind", "Admin Panel", "REST API"],
-    liveDisabled: true,
-    codeDisabled: true
-  },
-  {
-    title: "Your Next Great Project",
-    description: "This is a placeholder for another one of your amazing projects. You can easily add more by editing the projects array in this file. Each project will have its own placeholder image.",
-    image: {
-      src: "/images/project-2.png",
-      width: 800,
-      height: 600,
-      alt: "Placeholder Project",
-      hint: "software project"
-    },
-    tags: ["Next.js", "TypeScript", "ShadCN UI", "Vercel"],
-    liveDisabled: true,
-    codeDisabled: true
-  }
-];
-
 export function Portfolio() {
   return (
     <section id="portfolio" className="py-20">
@@ -46,11 +14,7 @@ export function Portfolio() {
             <p className="text-muted-foreground mt-2">A selection of my work. Add your own projects below.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-<<<<<<< HEAD
           {projectsData.projects.map((project, index) => (
-=======
-          {projects.map((project, index) => (
->>>>>>> b47f132471194f7a20e76ee643947fd3705459de
             <Card key={index} className="overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300 flex flex-col">
               <CardContent className="p-0">
                 <Image 
